@@ -12,6 +12,7 @@ function setup() {
   mundo.agregarEscena(new Tecito());
   mundo.agregarEscena(new Puchito());
   mundo.agregarEscena(new Codigo());
+  mundo.agregarEscena(new MenuEscenas());
 }
 
 function draw() {

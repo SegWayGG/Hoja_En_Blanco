@@ -4,6 +4,7 @@ let imagenes = {};
 
 function preload() {
   imagenes.taza = loadImage('assets/img/taza.png');
+  imagenes.pucho = loadImage('assets/img/pucho.png');
 }
 
 function setup() {

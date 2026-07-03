@@ -1,8 +1,9 @@
 
 const mundo = new Mundo();
+let imagenes = {};
 
 function preload() {
-  // mundo.img01 = loadImage(...);
+  imagenes.taza = loadImage('assets/img/taza.png');
 }
 
 function setup() {

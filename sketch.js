@@ -1,9 +1,35 @@
 
 const mundo = new Mundo();
-let imagenes = {};
+let imagenes = {
+  tazaSeq: []
+};
 
 function preload() {
   imagenes.taza = loadImage('assets/img/taza.png');
+  
+  imagenes.tazaSeq = [
+    loadImage('assets/img/taza100.png'),
+    loadImage('assets/img/taza85.png'),
+    loadImage('assets/img/taza70.png'),
+    loadImage('assets/img/taza55.png'),
+    loadImage('assets/img/taza40.png'),
+    loadImage('assets/img/taza25.png'),
+    loadImage('assets/img/taza10.png'),
+    loadImage('assets/img/taza0.png')
+  ];
+
+  imagenes.puchoSeq = [
+    loadImage('assets/img/pucho100.png'),
+    loadImage('assets/img/pucho90.png'),
+    loadImage('assets/img/pucho80.png'),
+    loadImage('assets/img/pucho70.png'),
+    loadImage('assets/img/pucho60.png'),
+    loadImage('assets/img/pucho50.png'),
+    loadImage('assets/img/pucho40.png'),
+    loadImage('assets/img/pucho30.png'),
+    loadImage('assets/img/pucho20.png')
+  ]
+
   imagenes.pucho = loadImage('assets/img/pucho.png');
 }
 

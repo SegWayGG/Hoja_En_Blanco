@@ -32,9 +32,9 @@ class ParticulaVapor{
     }
 
     iniciarValores() {
-        this.x = this.oX + random(-60, 60);
+        this.x = this.oX + random(-75, 75);
         this.y = this.oY;
-        this.vy = random(-0.1, -0.5);
+        this.vy = random(-0.3, -0.7);
         this.tamano = random(5, 10);
         this.ruido = random(1000);
     }

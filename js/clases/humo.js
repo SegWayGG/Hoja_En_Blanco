@@ -16,7 +16,7 @@ class ParticulaHumo extends ParticulaVapor {
     }
 
     iniciarValores(){
-        this.x = this.oX + random(-2,2);
+        this.x = this.oX + random(-3,3);
         this.y = this.oY + 15;
         this.vy = random(-0.2, -0.8);
         this.tamano = random(3, 7);

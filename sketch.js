@@ -1,12 +1,13 @@
 
+/// <reference path="./p5.global-mode.d.ts" />
 const mundo = new Mundo();
 let imagenes = {
-  tazaSeq: []
+  tazaSeq: [],
+  puchoSeq: [],
+  vscode: ""
 };
 
 function preload() {
-  imagenes.taza = loadImage('assets/img/taza.png');
-  
   imagenes.tazaSeq = [
     loadImage('assets/img/taza100.png'),
     loadImage('assets/img/taza85.png'),
@@ -30,7 +31,9 @@ function preload() {
     loadImage('assets/img/pucho20.png')
   ]
 
-  imagenes.pucho = loadImage('assets/img/pucho.png');
+  imagenes.vscode = loadImage('assets/img/vscode.png');
+
+  
 }
 
 function setup() {
@@ -56,4 +59,8 @@ function mouseClicked() {
 function keyTyped() {
   // mundo.previaEscena();
   mundo.escenaActual.keyTyped();
+}
+
+function keyPressed() {
+  mundo.escenaActual.keyPressed();
 }

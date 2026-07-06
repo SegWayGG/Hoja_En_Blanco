@@ -8,7 +8,6 @@ class Menu extends Escena {
 
     draw() {
         background (255);
-        //text('ESCENA: Menu', width/2, height/2);
         this.botonComenzar.draw();
         this.botonEscenas.draw();
     }

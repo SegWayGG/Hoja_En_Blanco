@@ -12,7 +12,7 @@ class Puchito extends Escena {
 
     draw() {
         background (200);
-
+        
         imageMode(CENTER);
         image(imagenes.puchoSeq[this.estadoPucho], width/2 - 10, height/2, 250, 250);
 

@@ -10,6 +10,7 @@ class Boton{
     draw() {
         stroke(0);
         noFill();
+        
         rect(this.x, this.y, this.ancho, this.alto);
         textAlign(CENTER, CENTER);
         text(this.texto, this.x + this.ancho/2, this.y + this.alto/2);

@@ -3,10 +3,6 @@ class Puchito extends Escena {
     constructor(){
         super();
         this.estadoPucho = 0;
-
-        this.coordBrasa = [
-
-        ]
         this.fuenteHumo = new FuenteHumo(width/2 - 7, height/2 + 21, 65);
     }
 

@@ -4,8 +4,13 @@ const mundo = new Mundo();
 let imagenes = {
   tazaSeq: [],
   puchoSeq: [],
-  vscode: ""
+  vscode: "",
+  vscode2: ""
 };
+
+let canciones = [];
+let indiceCancion = 0;
+let musicaMuteada = false;
 
 function preload() {
   imagenes.tazaSeq = [
@@ -32,8 +37,30 @@ function preload() {
   ]
 
   imagenes.vscode = loadImage('assets/img/vscode.png');
+  imagenes.vscode2 = loadImage('assets/img/vscode2.png');
 
-  
+  soundFormats('mp3');
+  canciones[0] = loadSound('assets/audio/track1.mp3');
+  canciones[1] = loadSound('assets/audio/track2.mp3');
+  canciones[2] = loadSound('assets/audio/track3.mp3');
+}
+
+function successFunc() {
+  print('¡Cargó el archivo con éxito!');
+}
+
+function errorFunc(msg) {
+  print('No se pudo cargar el archivo');
+  // Imprime en la página HTML sobre la etiqueta que crea p5 automáticamente.
+  let e = document.getElementById('p5_loading');
+  e.textContent = `¡Falló la carga! ${msg}`;
+}
+
+function loadingFunc(value) {
+  progreso = value;
+  print('Cargando el archivo...', progreso);
+  let e = document.getElementById('p5_loading');
+  e.textContent = `Cargando archivo ${progreso}`;
 }
 
 function setup() {

@@ -12,6 +12,9 @@ let canciones = [];
 let indiceCancion = 0;
 let musicaMuteada = false;
 
+let sorbos =[];
+let pitadas = [];
+
 function preload() {
   imagenes.tazaSeq = [
     loadImage('assets/img/taza100.png'),
@@ -40,9 +43,20 @@ function preload() {
   imagenes.vscode2 = loadImage('assets/img/vscode2.png');
 
   soundFormats('mp3');
+
   canciones[0] = loadSound('assets/audio/track1.mp3');
   canciones[1] = loadSound('assets/audio/track2.mp3');
   canciones[2] = loadSound('assets/audio/track3.mp3');
+
+  sorbos[0] = loadSound('assets/audio/sorbo1.mp3');
+  sorbos[1] = loadSound('assets/audio/sorbo2.mp3');
+  sorbos[2] = loadSound('assets/audio/sorbo3.mp3');
+
+  pitadas[0] = loadSound('assets/audio/pitada1.mp3');
+  pitadas[1] = loadSound('assets/audio/pitada2.mp3');
+  pitadas[2] = loadSound('assets/audio/pitada3.mp3');
+  
+  mecha = loadSound('assets/audio/mecha.mp3');
 }
 
 function successFunc() {

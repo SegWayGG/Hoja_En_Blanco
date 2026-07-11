@@ -94,7 +94,7 @@ class Codigo extends Escena {
             if (canciones[indiceCancion].isPlaying()){
                 canciones[indiceCancion].pause();
             } else {
-                canciones[indiceCancion].play();
+                canciones[indiceCancion].loop();
             }
         }
         // NEXT
@@ -105,7 +105,7 @@ class Codigo extends Escena {
             if (indiceCancion >= canciones.length){
                 indiceCancion = 0;
             }
-            canciones[indiceCancion].play();
+            canciones[indiceCancion].loop();
         }
         // PREV
         if (mouseX > cx - 45 && mouseX < cx - 27 && mouseY > cy - 10 && mouseY < cy + 10){
@@ -115,7 +115,7 @@ class Codigo extends Escena {
             if (indiceCancion < 0){
                 indiceCancion = canciones.length - 1;
             }
-            canciones[indiceCancion].play();
+            canciones[indiceCancion].loop();
         }
         // SPEAKER
         if (mouseX > spX - 5 && mouseX < spX + 15 &&  mouseY > cy - 10 && mouseY < cy + 10){

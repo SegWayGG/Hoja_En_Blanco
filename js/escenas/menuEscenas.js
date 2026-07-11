@@ -19,14 +19,26 @@ class MenuEscenas extends Escena {
         if (this.botonE1.verificarClic(mouseX, mouseY)){
             print('*** mouse cliked en MenuEscenas -> E1.');
             mundo.elegirEscena(1);
+            userStartAudio();
+            if (!canciones[indiceCancion].isPlaying()){
+                canciones[indiceCancion].loop();
+            }
         }
         else if(this.botonE2.verificarClic(mouseX, mouseY)){
             print('*** mouse cliked en MenuEscenas -> E2.');
             mundo.elegirEscena(2);
+            userStartAudio();
+            if (!canciones[indiceCancion].isPlaying()){
+                canciones[indiceCancion].loop();
+            }
         }
         else if(this.botonE3.verificarClic(mouseX, mouseY)){
             print('*** mouse cliked en MenuEscenas -> E3.');
             mundo.elegirEscena(3);
+            userStartAudio();
+            if (!canciones[indiceCancion].isPlaying()){
+                canciones[indiceCancion].loop();
+            }
         }
         else if(this.botonVolver.verificarClic(mouseX, mouseY)){
             print ('*** mouse clicker en MenuEscenas -> Volver.')

@@ -16,6 +16,10 @@ class Menu extends Escena {
         //mundo.siguienteEscena();
         if (this.botonComenzar.verificarClic(mouseX, mouseY)){
             print('*** mouse cliked en Menu -> Comenzar.');
+            userStartAudio();
+            if (!canciones[indiceCancion].isPlaying()){
+                canciones[indiceCancion].loop();
+            }
             mundo.elegirEscena(1);
         }
         else if (this.botonEscenas.verificarClic(mouseX, mouseY)){

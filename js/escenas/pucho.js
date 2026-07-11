@@ -28,8 +28,7 @@ class Puchito extends Escena {
         for(let p of this.fuenteHumo.particulasArr){
             if(humoX >= 37.5){
                 p.oX = (width/2 - 7) - humoX + 5;   
-            }
-            else{
+            } else {
                 p.oX = (width/2 - 7) - humoX;
             }
             p.oY = (height/2 + 21) - humoY;
@@ -40,8 +39,16 @@ class Puchito extends Escena {
             print('*** pucho terminado, pasando escena');
             mundo.elegirEscena(3);
             this.estadoPucho = 0;
-        }
 
+            for(let p of this.fuenteHumo.particulasArr){
+                p.oX = width/2 - 7;
+                p.oY = height/2 + 21;
+            }
+        } else {
+            userStartAudio();
+            let pitadaRnd = random(pitadas);
+            pitadaRnd.play();
+        }
     }
 
     keyTyped() {

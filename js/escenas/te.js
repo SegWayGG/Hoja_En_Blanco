@@ -41,15 +41,19 @@ class Tecito extends Escena {
         this.estadoTaza++;
         if(this.estadoTaza >= imagenes.tazaSeq.length + 2){
             print('*** te terminado, pasando escena');
+            userStartAudio();
+            mecha.play();
             mundo.elegirEscena(2);
             this.estadoTaza = 0;
 
             for (let p of this.fuenteVapor.particulasArr){
                 p.oY = (height/2 - 42);
             }
+        } else {
+            userStartAudio();
+            let sorboRnd = random(sorbos);
+            sorboRnd.play();
         }
-
-        print('OrigenY =' + nivelVapor)
     }
 
     keyTyped() {

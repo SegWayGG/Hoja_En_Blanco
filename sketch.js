@@ -1,3 +1,11 @@
+/*
+ * Título de la Obra: Hoja en blanco
+ * Alumnx: Francisco Santillán.
+ * Institución: Universidad Nacional de las Artes (UNA)
+ * Carrera: Licenciatura en Artes Multimediales
+*/
+
+
 // Autocompletado de p5.js
 /// <reference path="./p5.global-mode.d.ts" />
 const mundo = new Mundo(); // Crea el controlador que gestiona todas las escenas.

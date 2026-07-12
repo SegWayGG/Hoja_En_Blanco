@@ -1,17 +1,14 @@
 
 class Escena {
-    // constructor() {}
-
     draw() {
-        background (0);
-        text('ESCENA: Escena', width/2, height/2);
+        background (0); // Fondo por defecto.
     }
 
     mouseClicked() {
-        print('*** mouseClicked desde Escena');
+        print('*** mouseClicked desde Escena'); // Test.
     }
 
     keyTyped() {
-        print('*** keyTyped desde Escena');
+        print('*** keyTyped desde Escena'); // Test.
     }
 }
